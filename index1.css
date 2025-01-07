@@ -67,7 +67,7 @@ html, body{
     border-bottom-right-radius:5px;
     border-top-right-radius: 10px;
     border-right: 1px solid black;
-    color: #f4ffff;
+    color: #ffffff;
   
   }
   .main{
@@ -114,26 +114,27 @@ html, body{
 /* mobile code */
 @media all and (max-width: 800px){
   .html, .body{
-    overflow: scroll;
+    overflow: auto;
  }
-  
   .all{
       flex: 1;
-      flex-direction: column;
+      flex-direction: column !important;
+      margin-left: -20px !important;
+      margin-right: auto !important;
+      display: block !important;
    }
    .container{
       order: 1;
-      width: 90%;
+      max-width: 90% !important;
       margin-bottom: 20px;
-      height:1500px;
+      height:1500px !important;
    }
    .subcontainer{
-    height: 1400px;
-    width: 97%;
+    height: 1480px;
+    width: 97% !important;
  }
- .subhead{
-  height: 60px;
-  width: 90%;
+ .subhead, subhead h4{
+  display: none !important;
 } 
 .content{
    overflow: auto;
@@ -184,29 +185,29 @@ html, body{
   margin-left: 25% !important;
 }
 table{
-  margin-left: auto;
-  margin-right: auto;
-
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 .faketabs table{
-  display: none;
+  display: none !important;
 }
 #img1, #img2{
-  display: none;
+  display: none !important;
 }
  #td2, #td3, #td4 {
-  display: none;
+  display: none !important;
  }
  #kiku{ width: 50%;}
    .extra{
       order: 2;
-      width: 90%;
+      width: 90% !important;
       margin-left: 100px !important;
    }
    .extra{
     margin-left: 35px !important;
     margin-right: auto !important;
  }
+
   }
 /* mobile code */
 .content h5{
