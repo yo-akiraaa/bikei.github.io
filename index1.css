@@ -1,5 +1,5 @@
 html, body{
-  background-image: url(https://static.tumblr.com/bd328b0955178d08620e530517c238df/lpnm2ad/ecQn9i31o/tumblr_static_50rjgkcu7m88woco048o4g4sg.png);
+  background-image: url(https://i.postimg.cc/yY2DcyQj/tumblr-static-50rjgkcu7m88woco048o4g4sg.png);
   background-repeat: repeat-x;
   animation: scroll 1000s infinite linear;
   background-size: auto 100%;
@@ -23,6 +23,7 @@ html, body{
     margin-bottom: 20px;
     width: 100%;
     background-image: -webkit-linear-gradient( #ecf7aa75, transparent);
+    background-image: -moz-linear-gradient( #ecf7aa75, transparent);
   }
   .header p{
     margin-right: 25px;
@@ -343,17 +344,17 @@ table{
 }
 #img1{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   backface-visibility: hidden;
   z-index: 100;
 }
 #img2{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   z-index: 50;
-;
+
 }
 #img1, #img2 {animation: rotation 2s infinite linear; }
 @keyframes rotation {
@@ -515,3 +516,9 @@ color: #175c6b;
   .faketabs a{
     border: transparent;
     }
+    #banns{
+      position: fixed;
+      width: 25%;
+      right: 570px;
+      top: 95px;
+      }

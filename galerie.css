@@ -4,7 +4,7 @@ html, body{
   animation: scroll 1000s infinite linear;
   background-size: auto 100%;
   perspective: 800px;
-  overflow: auto;
+  overflow: visible;
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
@@ -101,60 +101,97 @@ html, body{
   }  
 /* mobile code */
 @media all and (max-width: 800px){
+  .html, .body{
+    overflow: auto !important;
+ }
   .all{
-      flex: 2;
-      flex-direction: column;
+      flex: 1;
+      flex-direction: column !important;
+      margin-left: -20px !important;
+      margin-right: auto !important;
+      display: block !important;
    }
-
    .container{
       order: 1;
-      width: 90%;
+      max-width: 90% !important;
       margin-bottom: 20px;
-      
+      height:1500px !important;
    }
-   .content{
-   height: 40px;
-   overflow: auto;
-    
+   .subcontainer{
+    height: 1480px;
+    width: 97% !important;
  }
+ .subhead, subhead h4{
+  display: none !important;
+} 
  .main{
   overflow: auto;
-  height: 50px;
 }
 .navbar{
   overflow: auto;
-  height: 50px;
-  justify-content: center;
-  
+}
+.navbar a{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 70% !important;
 }
 .navbar table{ 
-  margin-left: 25px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 70% !important;
+}
+.stamps{ 
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 70% !important;
 }
  .subcontainer{
   flex-direction: column;
-  
 }
-table{
+.maintop{
+  flex-direction: column;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+}
+.misc{
+  flex: 1;
+  flex-direction: column;
+}
+.pixeltalia{
+  width: 50% !important;
+  margin-left: 25% !important;
+}
+table{
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 .faketabs table{
-  display: none;
-}
-#image1, #image2{
-  display: none;
+  display: none !important;
 }
  #td2, #td3, #td4 {
-  display: none;
+  display: none !important;
  }
- #kiku{ width: 30%;}
+ #kiku{ width: 50%;}
    .extra{
       order: 2;
-      width: 90%;
-      margin-left: 35px;
+      width: 90% !important;
+      margin-left: 100px !important;
    }
-
+   .extra{
+    margin-left: 35px !important;
+    margin-right: auto !important;
+ }
+.lightbox img{
+min-width: 500px !important;
+right: -30px !important;
+}
+#image1, #image2{
+  display: none !important;
+ 
+ }
   }
 /* mobile code */
 #list{
@@ -247,15 +284,15 @@ table{
 }
 #image1{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   backface-visibility: hidden;
   z-index: 100;
 }
 #image2{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   z-index: 50;
 ;
 }
@@ -386,13 +423,6 @@ table{
   width: px;
 }
 
-.vn{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  gap: 10px;
-}
-
 #heatmg{
  margin-left: auto;
  margin-right: auto;
@@ -420,14 +450,14 @@ table{
   top:0;
   left: 0;
   background-color: #00000068;
-  background-size: 100px 100px;
   transition: all .3s;
+  overflow: hidden;
 }
 .photo{
   z-index: 1;
 }
 .lightbox img{
-  max-width: 45%;
+  max-width: 500px;
   margin-top: 1%;
   margin-left: auto;
   margin-right: auto;
@@ -443,7 +473,12 @@ table{
  text-decoration: underline;
  color: #4b5b56;
 }
-
+#banns{
+  position: fixed;
+  width: 25%;
+  right: 570px;
+  top: 95px;
+  }
 
 
  

@@ -101,61 +101,122 @@ html, body{
   }  
 /* mobile code */
 @media all and (max-width: 800px){
+  .html, .body{
+    overflow: auto;
+ }
   .all{
-      flex: 2;
-      flex-direction: column;
+      flex: 1;
+      flex-direction: column !important;
+      margin-left: -20px !important;
+      margin-right: auto !important;
+      display: block !important;
    }
-
    .container{
       order: 1;
-      width: 90%;
+      max-width: 90% !important;
       margin-bottom: 20px;
-      
+      height:1500px !important;
    }
-   .content{
-   height: 40px;
-   overflow: auto;
-    
+   .subcontainer{
+    height: 1480px;
+    width: 97% !important;
  }
+ .subhead, subhead h4{
+  display: none !important;
+} 
+.content{
+   overflow: auto;
+   background-size: 0% !important;
+   border: 0.5px black solid;
+ }
+ .content h3, content h4, content p{
+    background-color: #e6f6fe !important;
+}
  .main{
   overflow: auto;
-  height: 50px;
 }
 .navbar{
   overflow: auto;
-  height: 50px;
-  justify-content: center;
-  
+}
+.navbar a{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 70% !important;
 }
 .navbar table{ 
-  margin-left: 25px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 70% !important;
+}
+.stamps{ 
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 70% !important;
 }
  .subcontainer{
   flex-direction: column;
-  
 }
-table{
+.maintop{
+  flex-direction: column;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+}
+.misc{
+  flex: 1;
+  flex-direction: column;
+}
+.pixeltalia{
+  width: 50% !important;
+  margin-left: 25% !important;
+}
+table{
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 .faketabs table{
-  display: none;
+  display: none !important;
 }
 #img1, #img2{
-  display: none;
+  display: none !important;
 }
  #td2, #td3, #td4 {
-  display: none;
+  display: none !important;
  }
- #kiku{ width: 30%;}
+ #kiku{ width: 50%;}
    .extra{
       order: 2;
-      width: 90%;
-      margin-left: 35px;
+      width: 90% !important;
+      margin-left: 100px !important;
    }
-
+   .extra{
+    margin-left: 35px !important;
+    margin-right: auto !important;
+ }
+ .vn{
+  display: flex;
+  flex-direction: column !important;
+  gap: 10px;
+}
+.imgflx3{
+  display: flex;
+  flex-direction: column !important;
+  gap: 10px;
+  max-width: 40% !important;
+  justify-content: center !important;
+  margin-left: 30%;
+}
+.vn img{
+  max-width: 40% !important;
+  margin-left: 30%;
+}
+.imgflx{
+  margin-left: 20% !important;
+}
   }
+  
 /* mobile code */
 .content h5{
   margin-bottom: -20px;
@@ -271,17 +332,17 @@ table{
 }
 #img1{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   backface-visibility: hidden;
   z-index: 100;
 }
 #img2{
   position: absolute;
-  bottom: 150px;
-  left:1075px;
+  bottom: 75px;
+  left:850px;
   z-index: 50;
-;
+
 }
 #img1, #img2 {animation: rotation 2s infinite linear; }
 @keyframes rotation {
@@ -434,14 +495,6 @@ padding: 10px;
 .main a{
   width: px;
 }
-
-.vn{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  gap: 10px;
-}
-
 #heatmg{
  margin-left: auto;
  margin-right: auto;
@@ -459,3 +512,43 @@ padding: 10px;
  font-family: ms ui gothic;
   margin-left: 20px;
 }
+#banns{
+  position: fixed;
+  width: 25%;
+  right: 570px;
+  top: 95px;
+  }
+  #td2{
+    width: 700px;
+    }
+    .imgflx3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+  }
+  #sherlock, #hamilton, #mdzs{
+    max-height: 300px;
+  }
+  .vn{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 10px;
+    width: auto;
+  }
+  .vn img{
+    max-height: 300px;
+  }
+  #imgflx{
+    display: flex;
+    justify-content: center;
+  }
+  #intuos{
+    max-width: 300px;
+    margin-left: 60px;
+    margin-bottom: 35px;
+  }
+  #intuos1{
+    width: 300px;
+  }
