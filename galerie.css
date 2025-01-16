@@ -474,10 +474,10 @@ table{
  color: #4b5b56;
 }
 #banns{
-  position: fixed;
-  width: 25%;
-  right: 570px;
-  top: 95px;
+  position: static;
+  width: 45%;
+  margin-left: 450px;
+  margin-bottom: 10px;
   }
 
 

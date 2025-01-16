@@ -513,10 +513,10 @@ padding: 10px;
   margin-left: 20px;
 }
 #banns{
-  position: fixed;
-  width: 25%;
-  right: 570px;
-  top: 95px;
+  position: static;
+  width: 50%;
+  margin-left: 370px;
+  margin-bottom: 10px;
   }
   #td2{
     width: 700px;
